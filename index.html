@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memar</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Kufam:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+  <nav class="main-nav">
+    <div class="container nav-flex">
+      <h1 class="logo">Memar</h1>
+      <button class="btn-sus" id="btn_sus" onclick="nav_links()">&#9776</button>
+      <div class="main-nav-hidden" id="nav_links">
+        <ul>
+          <li><a href="#">Explore</a></li>
+          <li><a href="#">For Designers</a></li>
+          <li><a href="#">Hiring Designers?</a></li>
+        </ul>
+        <div class="nav-btns">
+          <button>Login</button>
+          <button>Register</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="welcome-sec">
+    <div class="container welcome-flex">
+      <div class="welcome-txt">
+        <span>WITH MEMAR YOU CAN</span>
+        <h1 class="animate__animated animate__bounceIn">Hire the world’s top designers</h1>
+        <p>Our hiring products help you to attract, engage, and connect with qualified candidates faster than ever. Find out why the world’s best companies trust Dribbble when hiring design talent.          </p>
+        <button>Sign Up</button>
+      </div>
+      <div class="welcome-illustrat">salam</div>
+    </div>
+  </section>
+
+  <section class="work-sec">
+    <div class="container ">
+      <nav class="work-nav">
+        <div class="select-type-of-work">
+          <button id="selector_btn" class="dropbtn" onclick="selector_btn()">Popular</button>
+          <div class="dropdown-content" id="myDropdown">
+            <a href="" onclick="selectorBtnText('Popular');return false;">Popular</a>
+            <a href="" onclick="selectorBtnText('Best of the Best');return false;">Best of the Best</a>
+            <a href="" onclick="selectorBtnText('Goods for Sale');return false;">Goods for Sale</a>
+          </div>
+        </div>
+        <ul class="works-category" id="slide">
+          <li><a href="#">Animation</a></li>
+          <li><a href="#">Branding</a></li>
+          <li><a href="#">Mobile</a></li>
+          <li><a href="#">Web Design</a></li>
+          <li><a href="#">Web Design</a></li>
+          <li><a href="#">Mobile</a></li>
+          <li><a href="#">Web Design</a></li>
+        </ul>
+        <button onclick="filterBtn()" class="selector-filter" id="myfilterBtn">Filter</button>
+      </nav>
+      <nav id="filterNav" class="filterNav">
+        <div class="filter-nav">
+          <div class="search-form">
+            <form action="">
+              <input type="search" name="" id="" placeholder="Search ...">
+            </form>
+          </div>
+          <div class="period-of-time">
+            <button id="time_btn" class="dropbtn_time" onclick="time_btn()">Popular</button>
+            <div class="timeSelect-content" id="timeSelectors">
+              <a href="#" onclick="timeSelBtn('Popular');return false;">Popular</a>
+              <a href="#" onclick="timeSelBtn('Best of the Best');return false;">Best of the Best</a>
+              <a href="#" onclick="timeSelBtn('Goods for Sale');return false;">Goods for Sale</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="work-sec-works">
+        <div>
+          <a href="link to shot">
+            <h5>Abolfazl SRZ</h5>
+          </a>
+          <button class="shot-like-btn">like</button>
+            <picture class="thumbnail"><img src="./imgs/ax1.jpg" alt="thumbnail"></picture>
+        </div>
+        <div>
+          <a href="link to shot">
+            <h5>AmirZa</h5>
+          </a>
+          <button class="shot-like-btn">like</button>
+            <picture class="thumbnail"><img src="./imgs/ax2.jpg" alt="thumbnail"></picture>
+        </div>
+        <div>
+          <a href="link to shot">
+            <h5>Abolfazl SRZ</h5>
+          </a>
+          <button class="shot-like-btn">like</button>
+            <picture class="thumbnail"><img src="./imgs/ax3.jpg" alt="thumbnail"></picture>
+        </div>
+        <div>
+          <a href="link to shot">
+            <h5>Abolfazl SRZ</h5>
+          </a>
+          <button class="shot-like-btn">like</button>
+            <picture class="thumbnail"><img src="./imgs/ax1.jpg" alt="thumbnail"></picture>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="main-footer">
+    <div class="container">
+      <div class="bunch-of-links">
+        here ;)
+      </div>
+      <div class="copy-right-and-more">
+        <span class="copy-right">© 2020 Memar. All rights reserved.</span>
+        <span class="love-you">Made with ♥ remotely from fucking IRAN</span>
+        <span class="number-of-shots"><span>14,195,742</span> shots dribbbled</span>
+      </div>
+    </div>
+  </footer>
+
+  
+  <script src="./js/jquery-3.5.1.min.js"></script>
+  <script src="./js/javascripts.js"></script>
+</body>
+</html>
